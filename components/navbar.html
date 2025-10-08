@@ -115,9 +115,12 @@
 
   <!-- Menú móvil desplegable - Lado derecho -->
   <div
-    id="mobile-menu"
-    class="fixed top-0 left-0 h-screen w-80 bg-white shadow-xl z-[100] transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto will-change-transform"
-  >
+  id="mobile-menu"
+  class="fixed top-0 left-0 h-screen w-80 bg-white shadow-xl z-[100]
+         transform -translate-x-full hidden
+         transition-transform duration-300 ease-in-out
+         overflow-y-auto will-change-transform"
+>
     <!-- Botón de cerrar -->
     <div class="flex justify-end p-4">
       <button id="close-menu" class="text-gray-500 hover:text-gray-700" aria-label="Cerrar">
