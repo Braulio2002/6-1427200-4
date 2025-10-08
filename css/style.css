@@ -6,10 +6,21 @@ body {
 
 
 .scrollbar-hide {
-    scrollbar-width: none; /* Para Firefox */
-    -ms-overflow-style: none; /* Para IE y Edge */
+  -ms-overflow-style: none; /* IE/Edge antiguo */
+}
+
+@supports (scrollbar-width: none) {
+  .scrollbar-hide {
+    scrollbar-width: none; /* Firefox */
   }
-  
+}
+
+/* Chrome/Safari/WebKit */
 .scrollbar-hide::-webkit-scrollbar {
-    display: none; /* Para Chrome, Safari y Opera */
-  }
+  display: none;
+}
+
+/* Fondo del overlay del buscador */
+.overlay-bg {
+  background-color: rgba(0, 0, 0, 0.575);
+}
