@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -18,12 +18,38 @@
   <!-- css  -->
   <link rel="stylesheet" href="./css/style.css" />
   <!-- carga del navbar -->
-  <script src="./js/nav.js"></script>
+  <script src="./js/nav.js" defer></script>
+
+  <!-- canonical & OG -->
+  <link rel="canonical" href="https://braulio2002.github.io/cisco/6-1427200-4.html" />
+  <meta property="og:title" content="Cable UTP AMP Cat6 CMR 23AWG 6-1427200-4" />
+  <meta property="og:type" content="product" />
+  <meta property="og:url" content="https://braulio2002.github.io/cisco/6-1427200-4.html" />
+  <meta property="og:image" content="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg" />
+  <link rel="preload" as="image" href="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg" />
 
   <!-- titulo de la pagina -->
   <title>
 Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
   </title>
+  
+  <!-- Datos estructurados de producto -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Cable UTP AMP Cat6 CMR 23AWG 6-1427200-4",
+    "image": ["https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"],
+    "brand": {"@type": "Brand", "name": "AMP"},
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "187.00",
+      "availability": "https://schema.org/InStock",
+      "url": "https://braulio2002.github.io/cisco/6-1427200-4.html"
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -301,7 +327,7 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
                   <div class="bg-white rounded-lg shadow-sm p-4">
                     <div class="w-full h-[260px] sm:h-[340px] md:h-[400px] flex items-center justify-center overflow-hidden">
                       <button type="button" class="block" aria-label="Ver imagen ampliada" onclick="viewImage(document.getElementById('img_main').src)">
-                        <img id="img_main"
+                        <img id="img_main" loading="eager" decoding="async"
                           src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
                           alt="Cable UTP AMP 6-1427200-4" class="max-h-full max-w-full object-contain" />
                       </button>
@@ -311,13 +337,13 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
                     <div class="flex gap-3 mt-4 justify-center">
                       <div class="w-16 h-16 sm:w-20 sm:h-20 border rounded p-1 hover:border-blue-400 transition">
                         <button type="button" class="w-full h-full" aria-label="Cambiar a Vista 1" onclick="toExchangeImage(this.querySelector('img'))">
-                          <img src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
+                          <img loading="lazy" decoding="async" src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
                             alt="Vista 1" class="w-full h-full object-contain" />
                         </button>
                       </div>
                       <div class="w-16 h-16 sm:w-20 sm:h-20 border rounded p-1 hover:border-blue-400 transition">
                         <button type="button" class="w-full h-full" aria-label="Cambiar a Vista 2" onclick="toExchangeImage(this.querySelector('img'))">
-                          <img src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
+                          <img loading="lazy" decoding="async" src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
                             alt="Vista 2" class="w-full h-full object-contain" />
                         </button>
                       </div>
@@ -332,8 +358,15 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
                       Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
                     </h1>
 
+                    <!-- Chips de highlights -->
+                    <div class="flex flex-wrap gap-2 mb-3">
+                      <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs">Cat 6</span>
+                      <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs">CMR</span>
+                      <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs">23 AWG</span>
+                    </div>
+
                     <div class="mb-6">
-                      <span class="text-2xl font-bold text-blue-600">U$ 187.00</span>
+                      <span class="text-2xl font-bold text-blue-600">US$ 187.00</span>
                       <a href="https://www.ds3comunicaciones.com/pedido.html"
                         class="mt-3 inline-flex items-center gap-1 bg-blue-600 text-white font-medium rounded-md px-4 py-2 hover:bg-blue-700 transition"
                         target="_blank" rel="noopener noreferrer">
@@ -372,15 +405,21 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
 
                     <div class="mt-6">
                       <h3 class="font-semibold text-lg mb-3">
-                        Download:
+                        Descargas
                       </h3>
-                      <div class="flex flex-wrap gap-3">
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <!-- Ficha técnica PDF -->
                         <a href="https://www.ds3comunicaciones.com/AMP/files/6-1427200-4-DS.pdf"
-                          class="flex items-center gap-2 text-blue-600 hover:text-blue-800 border border-gray-200 rounded-md px-4 py-2 hover:bg-gray-50 transition"
+                          class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-4 py-3 hover:bg-gray-50 hover:border-blue-300 transition"
                           target="_blank" rel="noopener noreferrer" aria-label="Descargar ficha técnica en PDF">
-                          <i class="fas fa-file-pdf text-red-500" aria-hidden="true"></i>
-                          <span>Ficha técnica</span>
+                          <div class="flex items-center gap-3">
+                            <i class="fas fa-file-pdf text-red-500 text-2xl" aria-hidden="true"></i>
+                            <div>
+                              <p class="font-medium text-gray-800">Ficha técnica (PDF)</p>
+                              <p class="text-xs text-gray-500">Especificaciones del producto</p>
+                            </div>
+                          </div>
+                          <span class="text-blue-600 font-medium group-hover:underline">Ver</span>
                         </a>
                       </div>
                     </div>
@@ -394,14 +433,14 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                   <button type="button" class="w-full" aria-label="Ver imagen Vista frontal" onclick="viewImage(this.querySelector('img').src)">
-                    <img src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
+                    <img loading="lazy" decoding="async" src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
                          alt="Vista frontal"
                          class="w-full h-56 sm:h-64 object-contain p-4 hover:opacity-90 transition" />
                   </button>
                 </div>
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                   <button type="button" class="w-full" aria-label="Ver imagen Vista frontal ampliada" onclick="viewImage(this.querySelector('img').src)">
-                    <img src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
+                    <img loading="lazy" decoding="async" src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
                          alt="Vista frontal ampliada"
                          class="w-full h-56 sm:h-64 object-contain p-4 hover:opacity-90 transition" />
                   </button>
@@ -1057,7 +1096,7 @@ Cable UTP AMP Categoria 6 Chaqueta CM
     </div>
   </footer>
   <!-- CARGA DE JAVASCRIPT  SECUNDARIA-->
-  <script src="./js/change_tabs.js"></script>
+  <script src="./js/change_tabs.js" defer></script>
 </body>
 
 </html>
