@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error loading navbar:', error));
 });
 
+function unlockScroll(){
+    // Quitar cualquier bloqueo de scroll residual
+    document.body.style.overflow = '';
+}
+
 function initializeNavbar() {
     // Menú hamburguesa (versión simplificada que será reemplazada por initializeMobileMenu)
     const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -44,6 +49,9 @@ function initializeMobileMenu() {
         mobileMenu.classList.add('translate-x-0');
         mobileMenu.classList.remove('hidden');
         // No oscurecer ni bloquear scroll
+        unlockScroll();
+        const searchModal = document.getElementById('search-modal');
+        if (searchModal) { searchModal.classList.add('hidden'); searchModal.classList.add('none'); }
 
         // Cambiar ícono
         const icon = mobileMenuButton.querySelector('i');
@@ -66,6 +74,7 @@ function initializeMobileMenu() {
         mobileMenu.classList.add('-translate-x-full');
         mobileMenu.classList.remove('translate-x-0');
         // Sin overlay ni bloqueo de scroll
+        unlockScroll();
         
         // Cambiar ícono
         const icon = mobileMenuButton.querySelector('i');
