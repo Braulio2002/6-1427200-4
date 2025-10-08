@@ -36,6 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+  // Marcar miniatura activa
+  window.setActiveThumb = function(btn){
+    const allThumbs = document.querySelectorAll('.thumb');
+    allThumbs.forEach(function(t){ t.classList.remove('ring-2','ring-blue-500'); });
+    const parent = btn && typeof btn.closest === 'function' ? btn.closest('.thumb') : null;
+    if (parent) { parent.classList.add('ring-2','ring-blue-500'); }
+  }
 });
 
 // Intercambio de imagen principal desde miniaturas
