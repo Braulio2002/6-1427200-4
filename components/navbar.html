@@ -41,12 +41,15 @@
       </div>
 
       <!-- Botón de búsqueda -->
-      <div class="flex items-center">
+      <div class="flex items-center gap-2">
         <button aria-label="Buscar"
           id="search-button"
           class="p-2 rounded-full hover:bg-gray-100 transition-colors"
         >
           <i class="fas fa-search text-black"></i>
+        </button>
+        <button id="toggle-dark" aria-label="Cambiar tema" class="p-2 rounded-full hover:bg-gray-100 transition-colors">
+          <i class="fas fa-moon text-black"></i>
         </button>
       </div>
     </div>
@@ -81,12 +84,17 @@
         </div>
 
         <!-- Botones buscar -->
-        <button aria-label="Buscar"
-          id="mobile-search-button"
-          class="p-2 rounded-md hover:bg-gray-300 transition-colors border border-black flex gap-3 items-center"
-        >
-          <i class="fas fa-search text-black"></i>
-        </button>
+        <div class="flex items-center gap-2">
+          <button aria-label="Buscar"
+            id="mobile-search-button"
+            class="p-2 rounded-md hover:bg-gray-300 transition-colors border border-black flex gap-3 items-center"
+          >
+            <i class="fas fa-search text-black"></i>
+          </button>
+          <button id="toggle-dark-mobile" aria-label="Cambiar tema" class="p-2 rounded-full hover:bg-gray-200 transition-colors">
+            <i class="fas fa-moon text-black"></i>
+          </button>
+        </div>
       </div>
 
       <!-- nabvar inferior -->

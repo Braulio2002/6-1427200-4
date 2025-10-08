@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
             initializeMobileMenu();
             initializeSearchModal();
             addDynamicStyles();
+            initializeDarkMode();
+            initializeCommandPaletteShortcut();
         })
         .catch(error => console.error('Error loading navbar:', error));
 });
@@ -142,4 +144,30 @@ function addDynamicStyles() {
         }
     `;
     document.head.appendChild(style);
+}
+
+function initializeDarkMode(){
+    const root = document.documentElement;
+    const storageKey = 'prefer-dark';
+    const buttons = document.querySelectorAll('#toggle-dark, #toggle-dark-mobile');
+    const apply = (val)=>{ if(val){ root.classList.add('dark'); } else { root.classList.remove('dark'); } };
+    const storageAvailable = typeof localStorage !== 'undefined' && typeof localStorage.setItem === 'function' && typeof localStorage.getItem === 'function';
+    const saved = storageAvailable ? (localStorage.getItem(storageKey) === 'true') : false;
+    apply(saved);
+    buttons.forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+            const next = !root.classList.contains('dark');
+            apply(next);
+            if (storageAvailable) { localStorage.setItem(storageKey, String(next)); }
+        });
+    });
+}
+
+function initializeCommandPaletteShortcut(){
+    document.addEventListener('keydown', function(e){
+        if((e.key === 'K' || e.key === 'k') && e.shiftKey){
+            const openSearch = document.getElementById('mobile-search-button') || document.getElementById('search-button');
+            if(openSearch){ openSearch.click(); e.preventDefault(); }
+        }
+    });
 }
