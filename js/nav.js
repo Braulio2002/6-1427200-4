@@ -43,7 +43,10 @@ function initializeMobileMenu() {
         mobileMenu.classList.remove('-translate-x-full');
         mobileMenu.classList.add('translate-x-0');
         mobileMenu.classList.remove('hidden');
-        if (menuOverlay) menuOverlay.classList.remove('hidden');
+        if (menuOverlay) {
+            menuOverlay.classList.remove('hidden');
+            menuOverlay.classList.add('bg-black','bg-opacity-50');
+        }
         document.body.style.overflow = 'hidden';
         
         // Cambiar ícono
