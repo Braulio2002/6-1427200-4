@@ -324,7 +324,7 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
                 <!-- Sección de imágenes -->
                 <div class="lg:w-1/2">
                   <!-- Imagen principal -->
-                  <div class="bg-white rounded-lg shadow-sm p-4">
+                  <div class="bg-gradient-to-b from-sky-50 to-white rounded-2xl shadow-sm p-4 md:p-6">
                     <div class="w-full h-[260px] sm:h-[340px] md:h-[400px] flex items-center justify-center overflow-hidden">
                       <button type="button" class="block" aria-label="Ver imagen ampliada" onclick="viewImage(document.getElementById('img_main').src)">
                         <img id="img_main" loading="eager" decoding="async"
@@ -335,14 +335,14 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
 
                     <!-- Miniaturas -->
                     <div class="flex gap-3 mt-4 justify-center">
-                      <div class="w-16 h-16 sm:w-20 sm:h-20 border rounded p-1 hover:border-blue-400 transition">
-                        <button type="button" class="w-full h-full" aria-label="Cambiar a Vista 1" onclick="toExchangeImage(this.querySelector('img'))">
+                      <div class="w-16 h-16 sm:w-20 sm:h-20 border rounded p-1 hover:border-blue-400 transition thumb" data-target="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg">
+                        <button type="button" class="w-full h-full" aria-label="Cambiar a Vista 1" onclick="toExchangeImage(this.querySelector('img')); setActiveThumb(this)">
                           <img loading="lazy" decoding="async" src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
                             alt="Vista 1" class="w-full h-full object-contain" />
                         </button>
                       </div>
-                      <div class="w-16 h-16 sm:w-20 sm:h-20 border rounded p-1 hover:border-blue-400 transition">
-                        <button type="button" class="w-full h-full" aria-label="Cambiar a Vista 2" onclick="toExchangeImage(this.querySelector('img'))">
+                      <div class="w-16 h-16 sm:w-20 sm:h-20 border rounded p-1 hover:border-blue-400 transition thumb" data-target="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg">
+                        <button type="button" class="w-full h-full" aria-label="Cambiar a Vista 2" onclick="toExchangeImage(this.querySelector('img')); setActiveThumb(this)">
                           <img loading="lazy" decoding="async" src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
                             alt="Vista 2" class="w-full h-full object-contain" />
                         </button>
@@ -379,12 +379,12 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
                       <h3 class="font-semibold text-md mb-3">
                         Especificaciones técnicas:
                       </h3>
-                      <ul class="space-y-2 text-gray-700">
+                      <ul class="text-gray-700 divide-y divide-gray-100 rounded-lg overflow-hidden">
                         <li class="flex items-start text-[#0D274D]">
                           <i class="fa-solid fa-circle text-[10px] text-[#0D274D] mt-1.5 mr-2 text"></i>
                           <span>Voltaje máximo de operación: 300 VAC / VDC</span>
                         </li>
-                        <li class="flex items-start text-[#0D274D]">
+                        <li class="flex items-start text-[#0D274D] bg-gray-50">
                           <i class="fa-solid fa-circle text-[10px] text-[#0D274D] mt-1.5 mr-2 text"></i>
                           <span>Velocidad nominal de propagación: 70 %</span>
                         </li>
@@ -392,7 +392,7 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
                           <i class="fa-solid fa-circle text-[10px] text-[#0D274D] mt-1.5 mr-2 text"></i>
                           <span>Temperatura de operación: -20 °C a 60 °C</span>
                         </li>
-                        <li class="flex items-start text-[#0D274D]">
+                        <li class="flex items-start text-[#0D274D] bg-gray-50">
                           <i class="fa-solid fa-circle text-[10px] text-[#0D274D] mt-1.5 mr-2 text"></i>
                           <span>Temperatura de almacenamiento: -20 °C a 80 °C</span>
                         </li>
@@ -416,10 +416,10 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
                             <i class="fas fa-file-pdf text-red-500 text-2xl" aria-hidden="true"></i>
                             <div>
                               <p class="font-medium text-gray-800">Ficha técnica (PDF)</p>
-                              <p class="text-xs text-gray-500">Especificaciones del producto</p>
+                              <p class="text-xs text-gray-500 flex items-center gap-2">Especificaciones del producto <span class="inline-block text-gray-400">•</span> <span>0.8 MB</span></p>
                             </div>
                           </div>
-                          <span class="text-blue-600 font-medium group-hover:underline">Ver</span>
+                          <span class="text-blue-600 font-medium group-hover:underline group-hover:translate-x-0.5 transition-transform">Ver →</span>
                         </a>
                       </div>
                     </div>
@@ -966,6 +966,16 @@ Cable UTP AMP Categoria 6 Chaqueta CM
       </div>
     </section>
   </main>
+
+  <!-- Barra de compra sticky (solo móvil) -->
+  <div class="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t p-3 md:hidden">
+    <div class="flex items-center justify-between gap-3">
+      <span class="font-bold text-blue-700">US$ 187.00</span>
+      <a href="https://www.ds3comunicaciones.com/pedido.html"
+         class="flex-1 text-center bg-blue-600 text-white py-2 rounded-lg shadow-md hover:bg-blue-700"
+         target="_blank" rel="noopener noreferrer">Comprar ahora</a>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="bg-gray-100 py-8 px-4 sm:px-6 lg:px-8 w-full">
