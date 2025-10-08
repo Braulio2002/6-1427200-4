@@ -336,12 +336,13 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
                 <div class="lg:w-1/2">
                   <!-- Imagen principal -->
                   <div class="bg-gradient-to-b from-sky-50 to-white rounded-2xl shadow-sm p-4 md:p-6">
-                    <div class="w-full h-[260px] sm:h-[340px] md:h-[400px] flex items-center justify-center overflow-hidden aspect-[4/3]">
+                    <div class="w-full h-[260px] sm:h-[340px] md:h-[400px] flex items-center justify-center overflow-hidden aspect-[4/3] relative group">
                       <button type="button" class="block" aria-label="Ver imagen ampliada" onclick="viewImage(document.getElementById('img_main').src)">
                         <img id="img_main" loading="eager" decoding="async" width="800" height="600"
                           src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
-                          alt="Cable UTP AMP 6-1427200-4" class="max-h-full max-w-full object-contain bg-gray-100" />
+                          alt="Cable UTP AMP 6-1427200-4" class="max-h-full max-w-full object-contain bg-gray-100 transition-transform duration-300 group-hover:scale-105" />
                       </button>
+                      <div class="pointer-events-none absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                     </div>
 
                     <!-- Miniaturas -->
@@ -442,19 +443,21 @@ Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
             <!-- Sección de galería de imágenes (oculta inicialmente) -->
             <div id="images-section" class="hidden mt-6">
               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden relative group">
                   <button type="button" class="w-full" aria-label="Ver imagen Vista frontal" onclick="viewImage(this.querySelector('img').src)">
                     <img loading="lazy" decoding="async" width="800" height="600" src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
                          alt="Vista frontal"
-                         class="w-full h-56 sm:h-64 object-contain p-4 hover:opacity-90 transition" />
+                         class="w-full h-56 sm:h-64 object-contain p-4 transition-transform duration-300 group-hover:scale-105" />
                   </button>
+                  <div class="pointer-events-none absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                 </div>
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden relative group">
                   <button type="button" class="w-full" aria-label="Ver imagen Vista frontal ampliada" onclick="viewImage(this.querySelector('img').src)">
                     <img loading="lazy" decoding="async" width="800" height="600" src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
                          alt="Vista frontal ampliada"
-                         class="w-full h-56 sm:h-64 object-contain p-4 hover:opacity-90 transition" />
+                         class="w-full h-56 sm:h-64 object-contain p-4 transition-transform duration-300 group-hover:scale-105" />
                   </button>
+                  <div class="pointer-events-none absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                 </div>
               </div>
             </div>
