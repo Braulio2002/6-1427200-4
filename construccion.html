@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página en construcción - DS3 Comunicaciones">
+  <meta name="robots" content="noindex, nofollow">
+  <title>En Construcción | DS3 Comunicaciones</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="icons/mariakii.ico">
+  
+  <!-- Tailwind CSS -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <script defer src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          animation: {
+            'bounce-slow': 'bounce 3s infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .gradient-animation {
+      background-size: 200% 200%;
+      animation: gradient 8s ease infinite;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-white to-blue-100 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 min-h-screen flex items-center justify-center p-4 gradient-animation">
+  
+  <!-- Contenedor principal -->
+  <div class="max-w-4xl w-full">
+    <div class="text-center">
+      
+      <!-- Icono animado -->
+      <div class="mb-8 flex justify-center">
+        <div class="relative">
+          <div class="absolute inset-0 bg-blue-400 dark:bg-blue-600 rounded-full blur-3xl opacity-30 animate-pulse-slow"></div>
+          <div class="relative bg-white dark:bg-gray-800 rounded-full p-8 shadow-2xl float-animation">
+            <i class="fas fa-tools text-6xl md:text-8xl text-blue-600 dark:text-blue-400"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Título -->
+      <h1 class="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white mb-4">
+        Estamos trabajando en algo increíble
+      </h1>
+      
+      <!-- Subtítulo -->
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+        Nuestra página está en construcción. Pronto tendremos novedades para ti.
+      </p>
+      
+      <!-- Barra de progreso animada -->
+      <div class="max-w-md mx-auto mb-12">
+        <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden shadow-inner">
+          <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-full rounded-full animate-pulse w-[65%]"></div>
+        </div>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Progreso: 65%</p>
+      </div>
+      
+      <!-- Características -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-blue-100 dark:bg-blue-900 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-rocket text-2xl text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-semibold text-gray-800 dark:text-white mb-2">Diseño Moderno</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Interfaz renovada y optimizada</p>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-green-100 dark:bg-green-900 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-bolt text-2xl text-green-600 dark:text-green-400"></i>
+          </div>
+          <h3 class="font-semibold text-gray-800 dark:text-white mb-2">Rápido y Eficiente</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Mejor rendimiento y velocidad</p>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+          <div class="bg-purple-100 dark:bg-purple-900 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-mobile-alt text-2xl text-purple-600 dark:text-purple-400"></i>
+          </div>
+          <h3 class="font-semibold text-gray-800 dark:text-white mb-2">100% Responsivo</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Adaptado a todos los dispositivos</p>
+        </div>
+      </div>
+      
+      <!-- Botones de acción -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+        <a href="index.html" 
+           class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+          <i class="fas fa-home"></i>
+          <span>Volver al inicio</span>
+        </a>
+        
+        <a href="mailto:contacto@ds3comunicaciones.com" 
+           class="inline-flex items-center gap-2 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-800 dark:text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105 border border-gray-200 dark:border-gray-700">
+          <i class="fas fa-envelope"></i>
+          <span>Contáctanos</span>
+        </a>
+      </div>
+      
+      <!-- Redes sociales -->
+      <div class="flex justify-center gap-4 mb-8">
+        <a href="#" aria-label="Facebook" 
+           class="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all hover:scale-110 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+          <i class="fab fa-facebook-f text-xl"></i>
+        </a>
+        <a href="#" aria-label="Twitter" 
+           class="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all hover:scale-110 text-gray-600 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-300">
+          <i class="fab fa-twitter text-xl"></i>
+        </a>
+        <a href="#" aria-label="Instagram" 
+           class="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all hover:scale-110 text-gray-600 dark:text-gray-300 hover:text-pink-600 dark:hover:text-pink-400">
+          <i class="fab fa-instagram text-xl"></i>
+        </a>
+        <a href="#" aria-label="LinkedIn" 
+           class="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all hover:scale-110 text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-500">
+          <i class="fab fa-linkedin-in text-xl"></i>
+        </a>
+      </div>
+      
+      <!-- Footer -->
+      <p class="text-sm text-gray-500 dark:text-gray-400">
+        © 2025 DS3 Comunicaciones. Todos los derechos reservados.
+      </p>
+    </div>
+  </div>
+  
+  <!-- Toggle dark mode (opcional) -->
+  <button id="toggle-dark" 
+          aria-label="Alternar modo oscuro"
+          class="fixed bottom-6 right-6 w-14 h-14 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 flex items-center justify-center text-gray-800 dark:text-white">
+    <i class="fas fa-moon dark:hidden text-xl"></i>
+    <i class="fas fa-sun hidden dark:inline text-xl"></i>
+  </button>
+  
+  <script>
+    // Dark mode toggle
+    const toggleBtn = document.getElementById('toggle-dark');
+    const html = document.documentElement;
+    const storageKey = 'prefer-dark';
+    
+    // Cargar preferencia guardada
+    const savedTheme = localStorage.getItem(storageKey);
+    if (savedTheme === 'true') {
+      html.classList.add('dark');
+    }
+    
+    // Toggle al hacer clic
+    toggleBtn.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem(storageKey, html.classList.contains('dark'));
+    });
+  </script>
+</body>
+</html>
