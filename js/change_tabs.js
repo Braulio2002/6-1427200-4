@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
       imagesTab.classList.remove('bg-gray-100', 'text-gray-700');
       productTab.classList.remove('bg-blue-600', 'text-white');
       productTab.classList.add('bg-gray-100', 'text-gray-700');
+      const galleryImages = imagesSection.querySelectorAll('img');
+      galleryImages.forEach(function(img) {
+        img.classList.add('max-w-full');
+      });
     });
   }
 });
