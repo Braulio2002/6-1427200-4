@@ -1,3 +1,4 @@
+<!-- NAVBAR -->
 <nav class="bg-white/85 backdrop-blur w-full shadow-md border sticky top-0 z-40">
   <div class="container mx-auto px-4">
     <!-- Desktop Navbar -->
@@ -723,16 +724,13 @@
 
 </nav>
 
-<!-- Overlay para menú móvil (fuera del nav para evitar contención por backdrop-blur) -->
-<div
-  id="menu-overlay"
-  class="fixed inset-0 bg-black bg-opacity-50 z-[90] hidden"
-></div>
+<!-- OVERLAY: debajo del menú para que NO bloquee los clics del menú -->
+<div id="menu-overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
 
 <!-- Modal de Búsqueda -->
-<section 
+<section
   id="search-modal"
-  class="fixed top-0 left-0 right-0 bottom-0 h-screen w-full px-5 pt-7 anim none hidden z-50 overlay-bg"
+  class="fixed top-0 left-0 right-0 bottom-0 h-svh w-full px-5 pt-7 hidden z-50"
 >
   <div class="max-w-[600px] mx-auto flex gap-2 justify-between">
     <form
