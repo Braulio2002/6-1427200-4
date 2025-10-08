@@ -24,3 +24,8 @@ body {
 .overlay-bg {
   background-color: rgba(0, 0, 0, 0.575);
 }
+
+/* Optimización de rendimiento para animaciones de transform */
+.will-change-transform {
+  will-change: transform;
+}
