@@ -63,6 +63,8 @@ function initializeMobileMenu() {
 
     if (menuOverlay) {
         menuOverlay.addEventListener('click', closeMobileMenu);
+        // Asegurar stacking por encima del contenido y por debajo del menú
+        menuOverlay.style.zIndex = '90';
     }
 
     function closeMobileMenu() {

@@ -718,12 +718,13 @@
     </div>
   </div>
 
-  <!-- Overlay para menú móvil -->
-  <div
-    id="menu-overlay"
-    class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"
-  ></div>
 </nav>
+
+<!-- Overlay para menú móvil (fuera del nav para evitar contención por backdrop-blur) -->
+<div
+  id="menu-overlay"
+  class="fixed inset-0 bg-black bg-opacity-50 z-[90] hidden"
+></div>
 
 <!-- Modal de Búsqueda -->
 <section 
