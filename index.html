@@ -1,926 +1,466 @@
 ﻿<!DOCTYPE html>
-<html lang="es">
-
+<html lang="es" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Sitio web de ds3comunicaciones, líder en soluciones de redes y comunicaciones. Ofrecemos productos para WiFi y extensión de señal." />
-  <meta name="keywords"
-    content="En Peru, ANTENA HYPERLINK, internet inalambrico,ANTENA PARA INTERNET,Antena Omnidireccional,Antena de panel, Antena 5.8 UAP-AC-EDU AccessPoint UAP-AC-EDU para interior de Doble banda 5GHz y 2.4 GHz , 802.11a/b/g/n/ac, MIMO3x3 ( 2,4 GHz ) 22dBm 450 Mbps , MIMO3x3 ( 5 GHz) 22dBm / 1300Mbps, tres Antenas de doble banda de 2,4 GHz : 3 dBi , 5 GHz : 3 dBi / 01 puerto Ethernet 10/100/1000 Mbps, PoE Pasivo 48v o 802.3at PoE+ compatibles, Incluye PoE 48V 0.5A Gige , software y kit para montaje, marca UBiQuiTi" />
-  <meta name="author" content="ds3comunicaciones" />
-  <!-- tailwin cdn -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- fontawesome cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- performance: preconnect -->
-  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <!-- css  -->
-  <link rel="stylesheet" href="./css/style.css" />
-  <!-- carga del navbar -->
-  <script src="./js/nav.js" defer></script>
-
-  <!-- canonical & OG -->
-  <link rel="canonical" href="https://braulio2002.github.io/cisco/6-1427200-4.html" />
-  <meta property="og:title" content="Cable UTP AMP Cat6 CMR 23AWG 6-1427200-4" />
-  <meta property="og:type" content="product" />
-  <meta property="og:url" content="https://braulio2002.github.io/cisco/6-1427200-4.html" />
-  <meta property="og:image" content="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg" />
-  <link rel="preload" as="image" href="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg" />
-
-  <!-- titulo de la pagina -->
-  <title>
-Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
-  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DS3 Comunicaciones - Líder en soluciones de redes y comunicaciones en Perú. Cisco, MikroTik, Ubiquiti, AMP y más marcas líderes.">
+  <meta name="keywords" content="redes peru, cisco peru, switches, access point, cables estructurados, mikrotik, ubiquiti, networking peru">
+  <meta name="author" content="DS3 Comunicaciones">
   
-  <!-- Datos estructurados de producto -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Cable UTP AMP Cat6 CMR 23AWG 6-1427200-4",
-    "image": ["https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"],
-    "brand": {"@type": "Brand", "name": "AMP"},
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "USD",
-      "price": "187.00",
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": "187.00",
-        "priceCurrency": "USD",
-        "unitText": "rollo"
-      },
-      "availability": "https://schema.org/InStock",
-      "url": "https://braulio2002.github.io/cisco/6-1427200-4.html"
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="icons/mariakii.ico">
+  
+  <!-- Tailwind CSS -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <script defer src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Navbar -->
+  <script src="./js/nav.js" defer></script>
+  
+  <!-- Canonical & OG -->
+  <link rel="canonical" href="https://braulio2002.github.io/cisco/">
+  <meta property="og:title" content="DS3 Comunicaciones - Soluciones de Redes">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://braulio2002.github.io/cisco/">
+  <meta property="og:image" content="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg">
+  
+  <title>DS3 Comunicaciones | Soluciones de Redes y Comunicaciones</title>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in',
+            'slide-up': 'slideUp 0.6s ease-out',
+          }
+        }
+      }
     }
-  }
   </script>
+  
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
 </head>
 
-<body>
-  <!-- Skip link accesible -->
-  <a href="#information-section" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:bg-white focus:px-3 focus:py-2 focus:rounded focus:shadow">Saltar al contenido</a>
-  <!-- SUBMENU DE MARCA DEPENDIENDO DEL PRODUCTO -->
-  <nav class="bg-white border-b border-gray-200 shadow-sm">
-    <div class="relative">
-      <!-- Contenedor con scroll horizontal -->
-      <div class="nav-container grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 md:flex md:justify-evenly md:space-x-3 md:gap-0 px-3 sm:px-4 md:py-2 overflow-x-visible md:overflow-x-auto" aria-label="Subnavegación de categorías">
-        <!-- Item 1 -->
+<body class="bg-white dark:bg-[#0B1220] dark:text-gray-100">
+  <!-- Skip link -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:bg-white focus:px-3 focus:py-2 focus:rounded focus:shadow focus:z-50">Saltar al contenido</a>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 dark:from-blue-900 dark:via-blue-950 dark:to-gray-900 text-white py-20 md:py-32 overflow-hidden">
+    <!-- Patrón de fondo -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 hero-pattern"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-4xl mx-auto text-center animate-fade-in">
+        <!-- Logo -->
+        <div class="mb-8 flex justify-center">
+          <div class="bg-white rounded-xl p-4 shadow-2xl">
+            <img src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg" 
+                 alt="DS3 Comunicaciones" 
+                 class="h-16 md:h-20 w-auto"
+                 width="200" height="80"
+                 loading="eager">
+          </div>
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Soluciones Profesionales en <span class="text-blue-200">Redes y Comunicaciones</span>
+        </h1>
+        
+        <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+          Distribuidor autorizado de las marcas líderes en infraestructura de red, cableado estructurado y telecomunicaciones
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="#categorias" 
+             class="inline-flex items-center gap-2 bg-white text-blue-700 font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+            <i class="fas fa-shopping-bag"></i>
+            <span>Ver Productos</span>
+          </a>
+          
+          <a href="https://wa.me/994428965?text=Hola, necesito información" 
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+            <i class="fab fa-whatsapp"></i>
+            <span>Contactar por WhatsApp</span>
+          </a>
+        </div>
+        
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
+          <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+            <div class="text-3xl font-bold text-blue-200">20+</div>
+            <div class="text-sm text-blue-100">Marcas</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+            <div class="text-3xl font-bold text-blue-200">1000+</div>
+            <div class="text-sm text-blue-100">Productos</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+            <div class="text-3xl font-bold text-blue-200">15+</div>
+            <div class="text-sm text-blue-100">Años</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+            <div class="text-3xl font-bold text-blue-200">100%</div>
+            <div class="text-sm text-blue-100">Garantía</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Wave decoration -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+        <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" 
+              fill="currentColor" class="text-white dark:text-[#0B1220]"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content" class="py-16">
+    <!-- Categorías de Productos -->
+    <section id="categorias" class="container mx-auto px-4 mb-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+          Categorías de Productos
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Explora nuestra amplia gama de soluciones para infraestructura de red
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Switch Catalyst -->
         <a href="https://www.ds3comunicaciones.com/cisco/catalys_9200l.html"
-          class="nav-item w-full md:w-auto flex items-center p-1.5 sm:p-2 rounded-lg md:min-w-fit md:flex-shrink-0 space-x-1.5 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-          <div class="icon-container h-7 w-7 sm:h-8 sm:w-8 flex items-center justify-center">
-            <img src="./icons/Switch Catalyst.ico" class="nav-icon max-h-full max-w-full" alt="Switch Catalyst" />
+           class="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden border border-gray-200 dark:border-gray-700">
+          <div class="p-6 text-center">
+            <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-blue-50 dark:bg-blue-900/30 rounded-full group-hover:scale-110 transition-transform">
+              <img src="./icons/Switch Catalyst.ico" alt="Switch Catalyst" class="w-12 h-12 object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Switch Catalyst</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Switches empresariales de alto rendimiento</p>
+            <span class="text-blue-600 dark:text-blue-400 font-medium group-hover:underline">Ver productos →</span>
           </div>
-          <span class="text-xs sm:text-sm font-medium text-gray-600 whitespace-nowrap">Switch Catalyst</span>
         </a>
-
-        <!-- Item 2 -->
+        
+        <!-- Cisco Business -->
         <a href="https://www.ds3comunicaciones.com/cisco/bussines_sg350.html"
-          class="nav-item w-full md:w-auto flex items-center p-1.5 sm:p-2 rounded-lg md:min-w-fit md:flex-shrink-0 space-x-1.5 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-          <div class="icon-container h-7 w-7 sm:h-8 sm:w-8 flex items-center justify-center">
-            <img src="./icons/Cisco Business.ico" class="nav-icon max-h-full max-w-full" alt="Cisco Business" />
+           class="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden border border-gray-200 dark:border-gray-700">
+          <div class="p-6 text-center">
+            <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-green-50 dark:bg-green-900/30 rounded-full group-hover:scale-110 transition-transform">
+              <img src="./icons/Cisco Business.ico" alt="Cisco Business" class="w-12 h-12 object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Cisco Business</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Soluciones para pequeñas y medianas empresas</p>
+            <span class="text-blue-600 dark:text-blue-400 font-medium group-hover:underline">Ver productos →</span>
           </div>
-          <span class="text-xs sm:text-sm font-medium text-gray-600 whitespace-nowrap">Cisco Business</span>
         </a>
-
-        <!-- Item 3 -->
+        
+        <!-- Switch Industrial -->
         <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco_switch_industrial_b.html"
-          class="nav-item w-full md:w-auto flex items-center p-1.5 sm:p-2 rounded-lg md:min-w-fit md:flex-shrink-0 space-x-1.5 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-          <div class="icon-container h-7 w-7 sm:h-8 sm:w-8 flex items-center justify-center">
-            <img src="./icons/Switch Industrial.ico" class="nav-icon max-h-full max-w-full" alt="Switch Industrial" />
+           class="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden border border-gray-200 dark:border-gray-700">
+          <div class="p-6 text-center">
+            <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-orange-50 dark:bg-orange-900/30 rounded-full group-hover:scale-110 transition-transform">
+              <img src="./icons/Switch Industrial.ico" alt="Switch Industrial" class="w-12 h-12 object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Switch Industrial</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Equipos ruggedizados para ambientes extremos</p>
+            <span class="text-blue-600 dark:text-blue-400 font-medium group-hover:underline">Ver productos →</span>
           </div>
-          <span class="text-xs sm:text-sm font-medium text-gray-600 whitespace-nowrap">Switch Industrial</span>
         </a>
-
-        <!-- Item 4 -->
+        
+        <!-- Aironet -->
         <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco_access_point_b.html"
-          class="nav-item w-full md:w-auto flex items-center p-1.5 sm:p-2 rounded-lg md:min-w-fit md:flex-shrink-0 space-x-1.5 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-          <div class="icon-container h-7 w-7 sm:h-8 sm:w-8 flex items-center justify-center">
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M21 42C32.598 42 42 32.598 42 21C42 9.40202 32.598 0 21 0C9.40202 0 0 9.40202 0 21C0 32.598 9.40202 42 21 42Z"
-                fill="white" stroke="black" stroke-width="2" />
-
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M27 21C27 24.3137 24.3137 27 21 27C17.6863 27 15 24.3137 15 21C15 17.6863 17.6863 15 21 15C24.3137 15 27 17.6863 27 21Z"
-                fill="black" />
-
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M29 21C29 25.4183 25.4183 29 21 29C16.5817 29 13 25.4183 13 21C13 16.5817 16.5817 13 21 13C25.4183 13 29 16.5817 29 21Z"
-                fill="white" stroke="black" stroke-width="2" />
-            </svg>
+           class="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden border border-gray-200 dark:border-gray-700">
+          <div class="p-6 text-center">
+            <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-purple-50 dark:bg-purple-900/30 rounded-full group-hover:scale-110 transition-transform">
+              <img src="./icons/Aironet.ico" alt="Aironet" class="w-12 h-12 object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Aironet</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Access Points empresariales WiFi 6/6E</p>
+            <span class="text-blue-600 dark:text-blue-400 font-medium group-hover:underline">Ver productos →</span>
           </div>
-          <span class="text-xs sm:text-sm font-medium text-gray-600 whitespace-nowrap">Aironet</span>
         </a>
-
-        <!-- Item 5 -->
+        
+        <!-- Teléfonos -->
         <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco_telefonos_b.html"
-          class="nav-item w-full md:w-auto flex items-center p-1.5 sm:p-2 rounded-lg md:min-w-fit md:flex-shrink-0 space-x-1.5 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-          <div class="icon-container h-7 w-7 sm:h-8 sm:w-8 flex items-center justify-center">
-            <img src="./icons/Télefono.ico" class="nav-icon max-h-full max-w-full" alt="Teléfono" />
+           class="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden border border-gray-200 dark:border-gray-700">
+          <div class="p-6 text-center">
+            <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-red-50 dark:bg-red-900/30 rounded-full group-hover:scale-110 transition-transform">
+              <img src="./icons/Télefono.ico" alt="Teléfonos IP" class="w-12 h-12 object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Teléfonos IP</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Telefonía IP empresarial</p>
+            <span class="text-blue-600 dark:text-blue-400 font-medium group-hover:underline">Ver productos →</span>
           </div>
-          <span class="text-xs sm:text-sm font-medium text-gray-600 whitespace-nowrap">Teléfono</span>
         </a>
-
-        <!-- Item 6 -->
+        
+        <!-- Meraki -->
         <a href="https://ds3comunicaciones.com/cisco/precios_cisco_meraki_b.html"
-          class="nav-item w-full md:w-auto flex items-center p-1.5 sm:p-2 rounded-lg md:min-w-fit md:flex-shrink-0 space-x-1.5 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-          <div class="icon-container h-7 w-7 sm:h-8 sm:w-8 flex items-center justify-center">
-            <img src="./icons/mariakii.ico" class="nav-icon max-h-full max-w-full" alt="Meraki" />
+           class="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden border border-gray-200 dark:border-gray-700">
+          <div class="p-6 text-center">
+            <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-teal-50 dark:bg-teal-900/30 rounded-full group-hover:scale-110 transition-transform">
+              <img src="./icons/mariakii.ico" alt="Meraki" class="w-12 h-12 object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Meraki</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Redes cloud-managed</p>
+            <span class="text-blue-600 dark:text-blue-400 font-medium group-hover:underline">Ver productos →</span>
           </div>
-          <span class="text-xs sm:text-sm font-medium text-gray-600 whitespace-nowrap">Meraki</span>
         </a>
-
-        <!-- Item 7 -->
-        <a href="#" class="nav-item w-full md:w-auto flex items-center p-1.5 sm:p-2 rounded-lg md:min-w-fit md:flex-shrink-0 space-x-1.5 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-          <div class="icon-container h-7 w-7 sm:h-8 sm:w-8 flex items-center justify-center">
-            <img src="./icons/Transceiver.ico" class="nav-icon max-h-full max-w-full" alt="Transceiver" />
+        
+        <!-- Transceivers -->
+        <a href="construccion.html"
+           class="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden border border-gray-200 dark:border-gray-700">
+          <div class="p-6 text-center">
+            <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-yellow-50 dark:bg-yellow-900/30 rounded-full group-hover:scale-110 transition-transform">
+              <img src="./icons/Transceiver.ico" alt="Transceivers" class="w-12 h-12 object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Transceivers</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Módulos ópticos SFP/SFP+</p>
+            <span class="text-blue-600 dark:text-blue-400 font-medium group-hover:underline">Ver productos →</span>
           </div>
-          <span class="text-xs sm:text-sm font-medium text-gray-600 whitespace-nowrap">Transceiver</span>
+        </a>
+        
+        <!-- Cableado Estructurado -->
+        <a href="https://www.ds3comunicaciones.com/AMP/index.html"
+           class="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden border border-gray-200 dark:border-gray-700">
+          <div class="p-6 text-center">
+            <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-indigo-50 dark:bg-indigo-900/30 rounded-full group-hover:scale-110 transition-transform">
+              <i class="fas fa-network-wired text-3xl text-indigo-600 dark:text-indigo-400"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Cableado Estructurado</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Cables Cat6/Cat6A/Cat7, patch panels</p>
+            <span class="text-blue-600 dark:text-blue-400 font-medium group-hover:underline">Ver productos →</span>
+          </div>
         </a>
       </div>
-    </div>
-  </nav>
+    </section>
 
-  <!-- CONTENIDO DEL PRODUCTO -->
-  <main class="">
-    <!-- CASCADA DE NAVEGACIÓN RESPONSIVE "MARCA | PRODUCTO | NOMBRE" -->
-    <div
-      class="border px-3 py-2 text-xs md:text-sm text-slate-600 flex flex-nowrap items-center gap-1 overflow-x-auto scrollbar-hide whitespace-nowrap">
-      <a href="https://www.ds3comunicaciones.com/index.html" class="flex-shrink-0 hover:text-blue-600" aria-label="Inicio">
-        <i class="fa-solid fa-house text-[0.9em]"></i>
-      </a>
-      <span class="text-gray-400 flex-shrink-0"><i class="fa-solid fa-angle-right text-[0.8em]"></i></span>
-      <a href="https://www.ds3comunicaciones.com/AMP/index.html"
-        class="flex-shrink-0 hover:underline hover:text-blue-600">
-        AMP
-      </a>
-      <span class="text-gray-400 flex-shrink-0"><i class="fa-solid fa-angle-right text-[0.8em]"></i></span>
-      <a href="https://www.ds3comunicaciones.com/AMP/index.html#cablecat6"
-        class="flex-shrink-0 hover:underline hover:text-blue-600">
-        Cable de red Cat 6
-      </a>
-      <span class="text-gray-400 flex-shrink-0"><i class="fa-solid fa-angle-right text-[0.8em]"></i></span>
-      <span class="text-slate-800 font-medium flex-shrink-0">
-        6-1427200-4
-      </span>
-    </div>
-
-    <!-- CONTENT DE 3 COMULNAS SIDEBAR DERECHO - IZQUIERDO Y INFORMACION DE PRODUCTO -->
-    <div class="mx-auto border">
-      <div class="flex flex-col md:flex-row md:justify-evenly  mx-auto">
-        <!-- SIDEBAR DE MARCAS (oculto en móvil) -->
-        <aside
-          class="hidden lg:block bg-white p-2 rounded-lg shadow-md w-full md:w-48 lg:w-56 h-[80vh] overflow-y-auto scrollbar-hide" aria-labelledby="titulo-marcas">
-          <!-- Título -->
-          <h2 id="titulo-marcas" class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b">
-            Nuestras Marcas
+    <!-- Marcas Destacadas -->
+    <section class="bg-gray-50 dark:bg-gray-900 py-16">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+            Marcas que Distribuimos
           </h2>
-
-          <!-- Contenedor de marcas - responsive -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 ">
-            <!-- Marca Alfa -->
-            <a href="https://www.ds3comunicaciones.com/alfa/index.html"
-              class="flex items-center justify-center  rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/belden/images/ALFA_logo1.gif" alt="Alfa"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Airlive -->
-            <a href="https://www.ds3comunicaciones.com/airlive/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/belden/images/airlivelogo.gif" alt="Airlive"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Andrew -->
-            <a href="https://www.ds3comunicaciones.com/andrew/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/andrew/images/logo_andrew.jpg" alt="Andrew"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca AMP -->
-            <a href="https://www.ds3comunicaciones.com/AMP/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/belden/images/amp_logo2-91x20.jpg" alt="AMP" width="91" height="20"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Amphenol -->
-            <a href="https://www.ds3comunicaciones.com/amphenol/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/belden/images/amphenol_logo-100x21.jpg" alt="Amphenol" width="100" height="21"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Belden -->
-            <a href="https://www.ds3comunicaciones.com/belden/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/belden/images/Belden-Logo-93x15.jpg" alt="Belden" width="93" height="15"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Cisco -->
-            <a href="https://www.ds3comunicaciones.com/cisco/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/cisco/images/logo-cisco.gif" alt="Cisco"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Dahua -->
-            <a href="https://www.ds3comunicaciones.com/dahua/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/dahua/images/dahua_logo.jpg" alt="Dahua"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca D-Link -->
-            <a href="https://www.ds3comunicaciones.com/dlink/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/belden/images/D-Link_Logo-100x26.jpg" alt="D-Link" width="100" height="26"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Dixon -->
-            <a href="https://www.ds3comunicaciones.com/dixon/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/belden/images/dixon_logo-100x19.jpg" alt="Dixon" width="100" height="19"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca FibreFab -->
-            <a href="https://www.ds3comunicaciones.com/FibreFab/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/FibreFab/images/logo_fibrefab.png" alt="FibreFab"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca LanPro -->
-            <a href="https://www.ds3comunicaciones.com/lanpro/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/lanpro/images/lanpro_logo.jpg" alt="LanPro"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca L-Com -->
-            <a href="https://www.ds3comunicaciones.com/l-com/"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/sitebuilder/images/lcom_logo-100x23.jpg" alt="L-Com" width="100" height="23"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca MikroTik -->
-            <a href="https://www.ds3comunicaciones.com/mikrotik/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/belden/images/mikrotik_logo-100x24.png" alt="MikroTik" width="100" height="24"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Panduit -->
-            <a href="https://www.ds3comunicaciones.com/panduit/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/panduit/images/panduit_logo.jpg" alt="Panduit"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Satra -->
-            <a href="https://www.ds3comunicaciones.com/satra/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/satra/images/satra.JPG" alt="Satra"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Siemon -->
-            <a href="https://www.ds3comunicaciones.com/siemon/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/siemon/images/siemon_logo1.GIF" alt="Siemon"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca TP-Link -->
-            <a href="https://www.ds3comunicaciones.com/tplink/"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/belden/images/tp-link_logo-100x13.jpg" alt="TP-Link" width="100" height="13"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Trendnet -->
-            <a href="https://www.ds3comunicaciones.com/trendnet/"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/belden/images/trendnet_logo-100x20.jpg" alt="Trendnet" width="100" height="20"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-
-            <!-- Marca Ubiquiti -->
-            <a href="https://www.ds3comunicaciones.com/ubiquiti/index.html"
-              class="flex items-center justify-center p-1 rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
-              <img src="https://www.ds3comunicaciones.com/belden/images/ubnt_logo-100x47.png" alt="Ubiquiti" width="100" height="47"
-                class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
-            </a>
-          </div>
-        </aside>
-
-        <!-- CONTENIDO PRINCIPAL DE PRODUCTOS (siempre visible) -->
-        <div class="w-full lg:w-4/6 bg-white  rounded-lg shadow">
-          <div class="mx-auto max-w-[1200px] w-full">
-            <!-- Contenedor principal del producto -->
-            <div id="information-section" class="mt-5 flex flex-col lg:flex-row gap-6 flex-wrap">
-              <!-- Sección de información  e imagenes-->
-              <div class="w-full flex flex-col lg:flex-row gap-6">
-                <!-- Sección de imágenes -->
-                <div class="lg:w-1/2">
-                  <!-- Imagen principal -->
-                  <div class="bg-gradient-to-b from-sky-50 to-white rounded-2xl shadow-sm p-4 md:p-6">
-                    <div class="w-full h-[260px] sm:h-[340px] md:h-[400px] flex items-center justify-center overflow-hidden aspect-[4/3] relative group">
-                      <button type="button" class="block" aria-label="Ver imagen ampliada" onclick="viewImage(document.getElementById('img_main').src)">
-                        <img id="img_main" loading="eager" decoding="async" width="800" height="600"
-                          src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
-                          alt="Cable UTP AMP 6-1427200-4" class="max-h-full max-w-full object-contain bg-gray-100 transition-transform duration-300 group-hover:scale-105" />
-                      </button>
-                      <div class="pointer-events-none absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                    </div>
-
-                    <!-- Miniaturas -->
-                    <div class="flex gap-3 mt-4 justify-center">
-                      <div class="w-16 h-16 sm:w-20 sm:h-20 border rounded p-1 hover:border-blue-400 transition thumb" data-target="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg">
-                        <button type="button" class="w-full h-full" aria-label="Cambiar a Vista 1" onclick="toExchangeImage(this.querySelector('img')); setActiveThumb(this)">
-                          <img loading="lazy" decoding="async" width="160" height="160" src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
-                            alt="Vista 1" class="w-full h-full object-contain" />
-                        </button>
-                      </div>
-                      <div class="w-16 h-16 sm:w-20 sm:h-20 border rounded p-1 hover:border-blue-400 transition thumb" data-target="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg">
-                        <button type="button" class="w-full h-full" aria-label="Cambiar a Vista 2" onclick="toExchangeImage(this.querySelector('img')); setActiveThumb(this)">
-                          <img loading="lazy" decoding="async" width="160" height="160" src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
-                            alt="Vista 2" class="w-full h-full object-contain" />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Sección de información -->
-                <div class="lg:w-full px-2">
-                  <div class="bg-white rounded-lg shadow-sm ">
-                    <h1 class="md:text-md font-bold mb-4 text-[#0D274D]">
-                      Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
-                    </h1>
-
-                    <!-- Chips de highlights -->
-                    <div class="flex flex-wrap gap-2 mb-3">
-                      <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs">Cat 6</span>
-                      <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs">CMR</span>
-                      <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs">23 AWG</span>
-                    </div>
-
-                    <div class="mb-6">
-                      <span class="text-2xl font-bold text-blue-600">US$ 187.00 <span class="text-sm font-medium text-slate-600">por rollo</span></span>
-                      <a href="https://www.ds3comunicaciones.com/pedido.html"
-                        class="mt-3 inline-flex items-center gap-1 bg-blue-600 text-white font-medium rounded-md px-4 py-2 hover:bg-blue-700 transition"
-                        target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-shopping-cart"></i>
-                        Comprar ahora
-                      </a>
-                    </div>
-
-                    <div class="border-t pt-4">
-                      <h3 class="font-semibold text-md mb-3">
-                        Especificaciones técnicas:
-                      </h3>
-                      <ul class="text-gray-700 divide-y divide-gray-100 rounded-lg overflow-hidden">
-                        <li class="flex items-start text-[#0D274D]">
-                          <i class="fa-solid fa-circle text-[10px] text-[#0D274D] mt-1.5 mr-2 text"></i>
-                          <span>Voltaje máximo de operación: 300 VAC / VDC</span>
-                        </li>
-                        <li class="flex items-start text-[#0D274D] bg-gray-50">
-                          <i class="fa-solid fa-circle text-[10px] text-[#0D274D] mt-1.5 mr-2 text"></i>
-                          <span>Velocidad nominal de propagación: 70 %</span>
-                        </li>
-                        <li class="flex items-start text-[#0D274D]">
-                          <i class="fa-solid fa-circle text-[10px] text-[#0D274D] mt-1.5 mr-2 text"></i>
-                          <span>Temperatura de operación: -20 °C a 60 °C</span>
-                        </li>
-                        <li class="flex items-start text-[#0D274D] bg-gray-50">
-                          <i class="fa-solid fa-circle text-[10px] text-[#0D274D] mt-1.5 mr-2 text"></i>
-                          <span>Temperatura de almacenamiento: -20 °C a 80 °C</span>
-                        </li>
-                        <li class="flex items-start text-[#0D274D]">
-                          <i class="fa-solid fa-circle text-[10px] text-[#0D274D] mt-1.5 mr-2 text"></i>
-                          <span>Certificaciones TIA/EIA-568-B.2-1 e ISO/IEC 11801 Clase E</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="mt-6">
-                      <h3 class="font-semibold text-lg mb-3">
-                        Descargas
-                      </h3>
-                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        <!-- Ficha técnica PDF -->
-                        <a href="https://www.ds3comunicaciones.com/AMP/files/6-1427200-4-DS.pdf"
-                          class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-4 py-3 hover:bg-gray-50 hover:border-blue-300 transition"
-                          target="_blank" rel="noopener noreferrer" aria-label="Descargar ficha técnica en PDF">
-                          <div class="flex items-center gap-3">
-                            <i class="fas fa-file-pdf text-red-500 text-2xl" aria-hidden="true"></i>
-                            <div>
-                              <p class="font-medium text-gray-800">Ficha técnica (PDF)</p>
-                              <p class="text-xs text-gray-500 flex items-center gap-2">Especificaciones del producto <span class="inline-block text-gray-400">•</span> <span>0.8 MB</span></p>
-                            </div>
-                          </div>
-                          <span class="text-blue-600 font-medium group-hover:underline group-hover:translate-x-0.5 transition-transform">Ver →</span>
-                        </a>
-                        <!-- Manual PDF -->
-                        <a href="https://web.netperu100.com/cisco/catalyst/files/Catalyst_9200_manual.pdf"
-                          class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-4 py-3 hover:bg-gray-50 hover:border-blue-300 transition"
-                          target="_blank" rel="noopener noreferrer" aria-label="Descargar manual en PDF">
-                          <div class="flex items-center gap-3">
-                            <i class="fas fa-book-open text-blue-500 text-2xl" aria-hidden="true"></i>
-                            <div>
-                              <p class="font-medium text-gray-800">Manual (PDF)</p>
-                              <p class="text-xs text-gray-500">Guía del producto</p>
-                            </div>
-                          </div>
-                          <span class="text-blue-600 font-medium group-hover:underline group-hover:translate-x-0.5 transition-transform">Ver →</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Sección de galería de imágenes (oculta inicialmente) -->
-            <div id="images-section" class="hidden mt-6">
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden relative group">
-                  <button type="button" class="w-full" aria-label="Ver imagen Vista frontal" onclick="viewImage(this.querySelector('img').src)">
-                    <img loading="lazy" decoding="async" width="800" height="600" src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
-                         alt="Vista frontal"
-                         class="w-full h-56 sm:h-64 object-contain p-4 transition-transform duration-300 group-hover:scale-105" />
-                  </button>
-                  <div class="pointer-events-none absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                </div>
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden relative group">
-                  <button type="button" class="w-full" aria-label="Ver imagen Vista frontal ampliada" onclick="viewImage(this.querySelector('img').src)">
-                    <img loading="lazy" decoding="async" width="800" height="600" src="https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg"
-                         alt="Vista frontal ampliada"
-                         class="w-full h-56 sm:h-64 object-contain p-4 transition-transform duration-300 group-hover:scale-105" />
-                  </button>
-                  <div class="pointer-events-none absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Controles de pestañas -->
-            <div class="flex justify-center mt-6" role="tablist" aria-label="Pestañas de contenido">
-              <div class="inline-flex rounded-md shadow-sm">
-                <button id="product-tab" role="tab" aria-controls="information-section" aria-selected="true" tabindex="0"
-                  class="px-6 py-2 text-xs md:text-sm font-medium rounded-l-lg bg-blue-600 text-white focus:z-10 focus:outline-none">
-                  Producto
-                </button>
-                <button id="images-tab" role="tab" aria-controls="images-section" aria-selected="false" tabindex="-1"
-                  class="px-6 py-2 text-xs md:text-sm font-medium rounded-r-lg bg-gray-100 text-gray-700 focus:z-10 focus:outline-none">
-                  Imágenes
-                </button>
-              </div>
-            </div>
-
-            <!-- desplegables de informacion -->
-            <div class="mt-8 w-full mx-auto space-y-4">
-              <!-- Especificaciones Técnicas -->
-              <details open class="group border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-                <summary
-                  class="flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer transition-colors">
-                  <h3 class="font-semibold text-black flex items-center">
-                    <svg class="w-5 h-5 mr-2 text-blue-600 transition-transform group-open:rotate-90" fill="none"
-                      stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                    Especificaciones Técnicas
-                  </h3>
-                  <span class="text-blue-600 text-xs text-nowrap font-medium">Ver detalles</span>
-                </summary>
-                <div class="p-4 bg-white grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 h-5 w-5 text-blue-500 mt-0.5">
-                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <div class="ml-2">
-                      <p class="text-gray-700">
-                        <span class="font-medium">Tipo de dispositivo:</span>
-                        Velocidad nominal de propagación: 70 %
-                      </p>
-                    </div>
-                  </div>
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 h-5 w-5 text-blue-500 mt-0.5">
-                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <div class="ml-2">
-                      <p class="text-gray-700">
-                        <span class="font-medium">Temperatura de operación: -20 °C a 60 °C
-                      </p>
-                    </div>
-                  </div>
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 h-5 w-5 text-blue-500 mt-0.5">
-                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <div class="ml-2">
-                      <p class="text-gray-700">
-                        <span class="font-medium">Temperatura de almacenamiento: -20 °C a 80 °C
-                      </p>
-                    </div>
-                  </div>
-                  <!-- Más especificaciones... -->
-                </div>
-              </details>
-
-              <!-- Protocolos Soportados -->
-              <details class="group border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-                <summary
-                  class="flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer transition-colors">
-                  <h3 class="font-semibold text-black flex items-center">
-                    <svg class="w-5 h-5 mr-2 text-blue-600 transition-transform group-open:rotate-90" fill="none"
-                      stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                    Protocolos Soportados
-                  </h3>
-                  <span class="text-blue-600 text-xs text-nowrap font-medium">Ver detalles</span>
-                </summary>
-                <div class="p-4 bg-white">
-                  <div class="space-y-3">
-                    <div class="flex items-start">
-                      <div class="flex-shrink-0 h-5 w-5 text-blue-500 mt-0.5">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                        </svg>
-                      </div>
-                      <div class="ml-2">
-                        <p class="text-gray-700">
-                          <span class="font-medium">Protocolo de direccionamiento:</span>
-                          Soporte para enrutamiento IPv4 e IPv6, incluyendo protocolos como OSPF, EIGRP, IS-IS, RIP, y
-                          acceso enrutado.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="flex items-start">
-                      <div class="flex-shrink-0 h-5 w-5 text-blue-500 mt-0.5">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                          </path>
-                        </svg>
-                      </div>
-                      <div class="ml-2">
-                        <p class="text-gray-700">
-                          <span class="font-medium">Protocolo de gestión remota:</span>
-                          Compatible con SNMPv1, SNMPv2c, SNMPv3, Telnet, SSH, HTTP, HTTPS, y RMON
-                        </p>
-                      </div>
-                    </div>
-                    <!-- Más protocolos... -->
-                  </div>
-                </div>
-              </details>
-
-              <!-- Cumplimiento de Normas -->
-              <details class="group border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-                <summary
-                  class="flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer transition-colors">
-                  <h3 class="font-semibold text-black flex items-center">
-                    <svg class="w-5 h-5 mr-2 text-blue-600 transition-transform group-open:rotate-90" fill="none"
-                      stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                    Cumplimiento de Normas
-                  </h3>
-                  <span class="text-blue-600 text-xs text-nowrap font-medium">Ver detalles</span>
-                </summary>
-                <div class="p-4 bg-white">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 h-5 w-5 text-blue-500 mt-0.5">
-                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <div class="ml-2">
-                      <p class="text-gray-700">
-                        Cumple con IEEE 802.3, IEEE 802.3u, IEEE 802.3z, IEEE 802.1D, IEEE 802.1Q, IEEE 802.3ab, IEEE
-                        802.1p, IEEE 802.3af, IEEE 802.3x, IEEE 802.3ad (LACP), IEEE 802.1w, IEEE 802.1x, IEEE 802.1s,
-                        IEEE 802.3ah, IEEE 802.1ab (LLDP). </p>
-                    </div>
-                  </div>
-                </div>
-              </details>
-
-              <!-- Certificaciones y Ambiente -->
-              <details class="group border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-                <summary
-                  class="flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer transition-colors">
-                  <h3 class="font-semibold text-black flex items-center">
-                    <svg class="w-5 h-5 mr-2 text-blue-600 transition-transform group-open:rotate-90" fill="none"
-                      stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                    Certificaciones y Ambiente
-                  </h3>
-                  <span class="text-blue-600 text-xs text-nowrap font-medium">Ver detalles</span>
-                </summary>
-                <div class="p-4 bg-white grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 h-5 w-5 text-blue-500 mt-0.5">
-                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <div class="ml-2">
-                      <p class="text-gray-700">
-                        <span class="font-medium">Certificaciones:</span>
-                        CE, TUV GS, cUL, EN 60950, EN55022, NOM, VCCI Class A ITE, IEC 60950, EN55024, FCC Part 15, UL
-                        1950 (3), CSA 22.2 No. 950 (3).
-                      </p>
-                    </div>
-                  </div>
-                  <div class="flex items-start">
-                    <div class="flex-shrink-0 h-5 w-5 text-blue-500 mt-0.5">
-                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <div class="ml-2">
-                      <p class="text-gray-700">
-                        <span class="font-medium">Temperatura de operación:</span>
-                        -5 - 45 °C
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </details>
-            </div>
-          </div>
-
-          <!-- Modal para imágenes -->
-          <dialog id="image-modal" aria-labelledby="modal-title" class="p-0 bg-transparent w-full h-full">
-            <button type="button" class="absolute top-4 right-4 text-white text-3xl" aria-label="Cerrar" onclick="closeModal()">&times;</button>
-            <h2 id="modal-title" class="sr-only">Vista ampliada</h2>
-            <div class="w-full h-full flex items-center justify-center p-4">
-              <img id="modal-image" class="max-w-full max-h-[90vh]" src="" alt="Vista ampliada del producto 6-1427200-4" />
-            </div>
-          </dialog>
+          <p class="text-lg text-gray-600 dark:text-gray-300">
+            Trabajamos con los fabricantes más reconocidos del mercado
+          </p>
         </div>
-
-        <!-- LISTAS DE PRECIOS - Tarjetas modernas -->
-        <section aria-labelledby="titulo-precios" class="w-full lg:w-1/5 xl:w-1/4">
-          <h3 id="titulo-precios" class="text-base font-bold text-[#0D274D] mb-3">Listas de Precios</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
-            <a href="https://www.ds3comunicaciones.com/AMP/precios_amp.html" target="_blank" rel="noopener noreferrer"
-               class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-3 py-2 hover:bg-gray-50 hover:border-blue-300 transition">
-              <span class="text-sm font-medium text-gray-800">AMP</span>
-              <span class="text-blue-600 text-sm group-hover:translate-x-0.5 transition-transform">Ver →</span>
-            </a>
-            <a href="https://www.ds3comunicaciones.com/amphenol/precios_amphenol.html" target="_blank" rel="noopener noreferrer"
-               class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-3 py-2 hover:bg-gray-50 hover:border-blue-300 transition">
-              <span class="text-sm font-medium text-gray-800">Amphenol</span>
-              <span class="text-blue-600 text-sm group-hover:translate-x-0.5 transition-transform">Ver →</span>
-            </a>
-            <a href="https://www.ds3comunicaciones.com/andrew/precios_andrew.html" target="_blank" rel="noopener noreferrer"
-               class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-3 py-2 hover:bg-gray-50 hover:border-blue-300 transition">
-              <span class="text-sm font-medium text-gray-800">Andrew</span>
-              <span class="text-blue-600 text-sm group-hover:translate-x-0.5 transition-transform">Ver →</span>
-            </a>
-            <a href="https://www.ds3comunicaciones.com/apc/precios_apc.html" target="_blank" rel="noopener noreferrer"
-               class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-3 py-2 hover:bg-gray-50 hover:border-blue-300 transition">
-              <span class="text-sm font-medium text-gray-800">APC</span>
-              <span class="text-blue-600 text-sm group-hover:translate-x-0.5 transition-transform">Ver →</span>
-            </a>
-            <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco.html" target="_blank" rel="noopener noreferrer"
-               class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-3 py-2 hover:bg-gray-50 hover:border-blue-300 transition">
-              <span class="text-sm font-medium text-gray-800">CISCO</span>
-              <span class="text-blue-600 text-sm group-hover:translate-x-0.5 transition-transform">Ver →</span>
-            </a>
-            <a href="https://www.ds3comunicaciones.com/dlink/precios_dlink.html" target="_blank" rel="noopener noreferrer"
-               class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-3 py-2 hover:bg-gray-50 hover:border-blue-300 transition">
-              <span class="text-sm font-medium text-gray-800">D-Link</span>
-              <span class="text-blue-600 text-sm group-hover:translate-x-0.5 transition-transform">Ver →</span>
-            </a>
-            <a href="https://www.ds3comunicaciones.com/dixon/precios_dixon.html" target="_blank" rel="noopener noreferrer"
-               class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-3 py-2 hover:bg-gray-50 hover:border-blue-300 transition">
-              <span class="text-sm font-medium text-gray-800">Dixon</span>
-              <span class="text-blue-600 text-sm group-hover:translate-x-0.5 transition-transform">Ver →</span>
-            </a>
-            <a href="https://www.ds3comunicaciones.com/Energit/precios_energit.html" target="_blank" rel="noopener noreferrer"
-               class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-3 py-2 hover:bg-gray-50 hover:border-blue-300 transition">
-              <span class="text-sm font-medium text-gray-800">Energit</span>
-              <span class="text-blue-600 text-sm group-hover:translate-x-0.5 transition-transform">Ver →</span>
-            </a>
-            <a href="https://www.ds3comunicaciones.com/FibreFab/precios_fibrefab.html" target="_blank" rel="noopener noreferrer"
-               class="group flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-3 py-2 hover:bg-gray-50 hover:border-blue-300 transition">
-              <span class="text-sm font-medium text-gray-800">Fibra</span>
-              <span class="text-blue-600 text-sm group-hover:translate-x-0.5 transition-transform">Ver →</span>
-            </a>
-            <!-- ... mantener mismas marcas siguiendo el patrón ... -->
-          </div>
-        </section>
+        
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <!-- Cisco -->
+          <a href="https://www.ds3comunicaciones.com/cisco/index.html" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/cisco/images/logo-cisco.gif" 
+                 alt="Cisco" 
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+          
+          <!-- MikroTik -->
+          <a href="https://www.ds3comunicaciones.com/mikrotik/index.html" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/belden/images/mikrotik_logo-100x24.png" 
+                 alt="MikroTik" 
+                 width="100" height="24"
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+          
+          <!-- Ubiquiti -->
+          <a href="https://www.ds3comunicaciones.com/ubiquiti/index.html" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/belden/images/ubnt_logo-100x47.png" 
+                 alt="Ubiquiti" 
+                 width="100" height="47"
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+          
+          <!-- AMP -->
+          <a href="https://www.ds3comunicaciones.com/AMP/index.html" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/belden/images/amp_logo2-91x20.jpg" 
+                 alt="AMP" 
+                 width="91" height="20"
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+          
+          <!-- Belden -->
+          <a href="https://www.ds3comunicaciones.com/belden/index.html" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/belden/images/Belden-Logo-93x15.jpg" 
+                 alt="Belden" 
+                 width="93" height="15"
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+          
+          <!-- Panduit -->
+          <a href="https://www.ds3comunicaciones.com/panduit/index.html" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/panduit/images/panduit_logo.jpg" 
+                 alt="Panduit" 
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+          
+          <!-- D-Link -->
+          <a href="https://www.ds3comunicaciones.com/dlink/index.html" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/belden/images/D-Link_Logo-100x26.jpg" 
+                 alt="D-Link" 
+                 width="100" height="26"
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+          
+          <!-- TP-Link -->
+          <a href="https://www.ds3comunicaciones.com/tplink/" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/belden/images/tp-link_logo-100x13.jpg" 
+                 alt="TP-Link" 
+                 width="100" height="13"
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+          
+          <!-- Dahua -->
+          <a href="https://www.ds3comunicaciones.com/dahua/index.html" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/dahua/images/dahua_logo.jpg" 
+                 alt="Dahua" 
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+          
+          <!-- Amphenol -->
+          <a href="https://www.ds3comunicaciones.com/amphenol/index.html" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/belden/images/amphenol_logo-100x21.jpg" 
+                 alt="Amphenol" 
+                 width="100" height="21"
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+          
+          <!-- Siemon -->
+          <a href="https://www.ds3comunicaciones.com/siemon/index.html" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/siemon/images/siemon_logo1.GIF" 
+                 alt="Siemon" 
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+          
+          <!-- Trendnet -->
+          <a href="https://www.ds3comunicaciones.com/trendnet/" 
+             class="bg-white dark:bg-gray-800 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+            <img src="https://www.ds3comunicaciones.com/belden/images/trendnet_logo-100x20.jpg" 
+                 alt="Trendnet" 
+                 width="100" height="20"
+                 class="max-w-full max-h-12 object-contain"
+                 loading="lazy">
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- PRODUCTOS SIMILARES A ESTE  -->
-    <section class="py-8 bg-gray-50">
-      <div class="container mx-auto px-4 max-w-6xl">
-        <!-- Encabezado -->
-        <div class="text-center mb-8">
-          <h2 class="text-2xl md:text-3xl font-bold text-white bg-[#049FD9] py-4 px-6 rounded-lg shadow-md inline-block">
-            También Disponible: Cables de Red UTP Cat 6 y 7 en stock
-          </h2>
+    <!-- Por qué elegirnos -->
+    <section class="py-16 container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+          ¿Por Qué Elegirnos?
+        </h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto mb-4 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center">
+            <i class="fas fa-shield-alt text-3xl text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Garantía Oficial</h3>
+          <p class="text-gray-600 dark:text-gray-300">Todos nuestros productos cuentan con garantía del fabricante</p>
         </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto mb-4 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center">
+            <i class="fas fa-shipping-fast text-3xl text-green-600 dark:text-green-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Envío Rápido</h3>
+          <p class="text-gray-600 dark:text-gray-300">Entrega a todo el Perú en el menor tiempo posible</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto mb-4 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center">
+            <i class="fas fa-headset text-3xl text-purple-600 dark:text-purple-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Soporte Técnico</h3>
+          <p class="text-gray-600 dark:text-gray-300">Asesoría especializada antes y después de la compra</p>
+        </div>
+      </div>
+    </section>
 
-       <!-- Grid de productos -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Producto 1 -->
-          <a href="https://www.ds3comunicaciones.com/AMP/1859345-2.html"
-            class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500">
-            <div class="p-5 flex flex-col h-full">
-              <div class="flex-grow flex items-center justify-center mb-4 h-40">
-                <img width="800" height="600" src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
-                  alt="Cable utp 1859345-2"
-                  class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="border-t pt-4">
-                <div class="flex justify-between flex-col items-center mb-2">
-                  <h3 class="text-lg font-bold text-gray-800">
-                    1859345-2
-                  </h3>
-                </div>
-                <p class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2">
-                   Cable UTP AMP Categoria 6 Chaqueta LSZH
-                </p>
-                <div class="text-center mt-6 text-blue-600 font-semibold">
-                  Ver Producto
-                </div>
-              </div>
-            </div>
+    <!-- CTA Final -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-900 dark:to-blue-950 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          ¿Necesitas Ayuda con tu Proyecto?
+        </h2>
+        <p class="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+          Nuestro equipo de expertos está listo para asesorarte en la mejor solución para tu empresa
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/994428965?text=Hola, necesito asesoría" 
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+            <i class="fab fa-whatsapp text-xl"></i>
+            <span>Contactar Ahora</span>
           </a>
-
-          <!-- Producto 2 -->
-          <a href="https://www.ds3comunicaciones.com/AMP/1427254-4.html"
-            class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500">
-            <div class="p-5 flex flex-col h-full">
-              <div class="flex-grow flex items-center justify-center mb-4 h-40">
-                <img width="800" height="600" src="https://www.ds3comunicaciones.com/AMP/images/1427254-4-1.jpg"
-                  alt="Cable utp 142725-4"
-                  class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="border-t pt-4">
-                <div class="flex justify-between flex-col items-center mb-2">
-                  <h3 class="text-lg font-bold text-gray-800">
-                    142725-4
-                  </h3>
-                </div>
-                <p class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2">
-Cable UTP AMP Categoria 6 Chaqueta CM
-                </p>
-                <div class="text-center mt-6 text-blue-600 font-semibold">
-                  Ver Producto
-                </div>
-              </div>
-            </div>
+          <a href="mailto:netperu100@hotmail.com"
+             class="inline-flex items-center gap-2 bg-white text-blue-700 hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+            <i class="fas fa-envelope"></i>
+            <span>Enviar Email</span>
           </a>
-          <!-- Producto 3 -->
-          <a href="https://www.ds3comunicaciones.com/AMP/219585-2.html"
-            class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500">
-            <div class="p-5 flex flex-col h-full">
-              <div class="flex-grow flex items-center justify-center mb-4 h-40">
-                <img width="800" height="600" src="https://www.ds3comunicaciones.com/AMP/images/219585-2_front.jpg"
-                  alt="Switch Cisco C9200L-24T-4X-E"
-                  class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="border-t pt-4">
-                <div class="flex justify-between flex-col items-center mb-2">
-                  <h3 class="text-lg font-bold text-gray-800">
-                    219585-2
-                  </h3>
-                </div>
-                <p class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2">
-                   Cable UTP Cat 6 de 23 AWG, CHAQUETA LSZH marca AMP
-                </p>
-                <div class="text-center mt-6 text-blue-600 font-semibold">
-                  Ver Producto
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Producto 4 -->
-          <a href="https://www.ds3comunicaciones.com/AMP/1859218-2.html"
-            class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500">
-            <div class="p-5 flex flex-col h-full">
-              <div class="flex-grow flex items-center justify-center mb-4 h-40">
-                <img width="800" height="600" src="https://www.ds3comunicaciones.com/AMP/images/1859218-2.jpg"
-                  alt="Switch Cisco WS-C9200L-24P-4X-E"
-                  class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="border-t pt-4">
-                <div class="flex justify-between flex-col items-center mb-2">
-                  <h3 class="text-lg font-bold text-gray-800">
-                    1859218-2
-                  </h3>
-                </div>
-                <p class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2">
-                   Cable UTP AMP Categoria 6A Apantallado Chaqueta LSZH
-                </p>
-                <div class="text-center mt-6 text-blue-600 font-semibold">
-                  Ver Producto
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Producto 5 -->
-          <a href="https://www.ds3comunicaciones.com/AMP/1859381-2.html"
-            class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500">
-            <div class="p-5 flex flex-col h-full">
-              <div class="flex-grow flex items-center justify-center mb-4 h-40">
-                <img width="800" height="600" src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
-                  alt="Switch Cisco C9200L-48T-4G-E"
-                  class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="border-t pt-4">
-                <div class="flex justify-between flex-col items-center mb-2">
-                  <h3 class="text-lg font-bold text-gray-800">
-                    1859381-2
-                  </h3>
-                </div>
-                <p class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2">
-                   	Cable UTP AMP Categoria 6A Chaqueta LSZH IEC-60332-3
-                </p>
-                <div class="text-center mt-6 text-blue-600 font-semibold">
-                  Ver Producto
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Producto 6 -->
-          <a href="https://www.ds3comunicaciones.com/AMP/9-1499102-1.html"
-            class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500">
-            <div class="p-5 flex flex-col h-full">
-              <div class="flex-grow flex items-center justify-center mb-4 h-40">
-                <img width="800" height="600" src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
-                  alt="Switch Cisco WS-C9200L-48P-4G-E"
-                  class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105" />
-              </div>
-              <div class="border-t pt-4">
-                <div class="flex justify-between flex-col items-center mb-2">
-                  <h3 class="text-lg font-bold text-gray-800">
-                    9-1499102-1
-                  </h3>
-                </div>
-                <p class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2">
-                Cable UTP AMP Categoria 7A Chaqueta LSZH
-                </p>
-                <div class="text-center mt-6 text-blue-600 font-semibold">
-                  Ver Producto
-                </div>
-              </div>
-            </div>
-          </a>
-
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Barra de compra sticky (solo móvil) -->
-  <div class="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t p-3 md:hidden">
-    <div class="flex items-center justify-between gap-3">
-      <span class="font-bold text-blue-700">US$ 187.00 <span class="text-xs font-medium text-slate-600">por rollo</span></span>
-      <a href="https://www.ds3comunicaciones.com/pedido.html"
-         class="flex-1 text-center bg-blue-600 text-white py-2 rounded-lg shadow-md hover:bg-blue-700"
-         target="_blank" rel="noopener noreferrer">Comprar ahora</a>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="bg-[#0B1220] text-gray-300 py-10 px-4 sm:px-6 lg:px-8 w-full">
+  <!-- Footer -->
+  <footer class="bg-[#0B1220] text-gray-300 py-10 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Columna 1: Logo y contacto -->
         <div class="space-y-4">
           <a href="https://www.ds3comunicaciones.com/index.html" class="inline-flex items-center bg-white rounded-md p-2 shadow-sm w-fit" aria-label="Ir al inicio">
             <img src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg" alt="DS3 Comunicaciones"
-              class="h-10 w-auto" loading="lazy" decoding="async" />
+              class="h-10 w-auto" loading="lazy" decoding="async">
           </a>
 
           <div class="space-y-2">
@@ -929,10 +469,10 @@ Cable UTP AMP Categoria 6 Chaqueta CM
               <a href="#" class="text-gray-300 hover:text-white transition-colors" aria-label="Facebook">
                 <i class="fab fa-facebook-f text-xl"></i>
               </a>
-                  <a href="https://wa.me/994428965?text=Hola nesecito ayuda"
-                  target="_blank" rel="noopener noreferrer"
-                  aria-label="WhatsApp 994428965"
-                  class="text-gray-300 hover:text-green-400 transition-colors">
+              <a href="https://wa.me/994428965?text=Hola necesito ayuda"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="WhatsApp 994428965"
+                class="text-gray-300 hover:text-green-400 transition-colors">
                 <i class="fab fa-whatsapp text-xl"></i>
               </a>
             </div>
@@ -991,7 +531,7 @@ Cable UTP AMP Categoria 6 Chaqueta CM
           </ul>
         </div>
 
-        <!-- Columna 3: Soporte y más -->
+        <!-- Columna 3: Soporte -->
         <div class="space-y-4">
           <h3 class="text-lg font-bold text-white">Soporte</h3>
           <ul class="space-y-2">
@@ -1014,12 +554,12 @@ Cable UTP AMP Categoria 6 Chaqueta CM
         <div class="space-y-4">
           <h3 class="text-lg font-bold text-white">Contacto</h3>
           <div class="space-y-3">
-            <a href="https://wa.me/994428965?text=Hola nesecito ayuda" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/994428965?text=Hola necesito ayuda" target="_blank" rel="noopener noreferrer"
               class="flex items-center text-gray-300 hover:text-white transition-colors">
               <i class="fas fa-phone-alt mr-2"></i>
               <span>994 428 965</span>
             </a>
-            <a href="https://wa.me/996533223?text=Hola nesecito ayuda" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/996533223?text=Hola necesito ayuda" target="_blank" rel="noopener noreferrer"
               class="flex items-center text-gray-300 hover:text-white transition-colors">
               <i class="fas fa-phone-alt mr-2"></i>
               <span>996 533 223</span>
@@ -1038,12 +578,9 @@ Cable UTP AMP Categoria 6 Chaqueta CM
 
       <!-- Derechos de autor -->
       <div class="border-t border-white/10 mt-8 pt-6 text-center text-gray-400">
-        <p>&copy; 2023 DS3 Comunicaciones. Todos los derechos reservados.</p>
+        <p>&copy; 2025 DS3 Comunicaciones. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
-  <!-- CARGA DE JAVASCRIPT  SECUNDARIA-->
-  <script src="./js/change_tabs.js" defer></script>
 </body>
-
 </html>
