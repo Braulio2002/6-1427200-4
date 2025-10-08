@@ -43,12 +43,8 @@ function initializeMobileMenu() {
         mobileMenu.classList.remove('-translate-x-full');
         mobileMenu.classList.add('translate-x-0');
         mobileMenu.classList.remove('hidden');
-        if (menuOverlay) {
-            menuOverlay.classList.remove('hidden');
-            menuOverlay.classList.add('bg-black','bg-opacity-50');
-        }
-        document.body.style.overflow = 'hidden';
-        
+        // No oscurecer ni bloquear scroll
+
         // Cambiar ícono
         const icon = mobileMenuButton.querySelector('i');
         if (icon) {
@@ -62,16 +58,14 @@ function initializeMobileMenu() {
     }
 
     if (menuOverlay) {
-        menuOverlay.addEventListener('click', closeMobileMenu);
-        // Asegurar stacking por encima del contenido y por debajo del menú
-        menuOverlay.style.zIndex = '90';
+        // Desactivar overlay visual
+        menuOverlay.classList.add('hidden');
     }
 
     function closeMobileMenu() {
         mobileMenu.classList.add('-translate-x-full');
         mobileMenu.classList.remove('translate-x-0');
-        if (menuOverlay) menuOverlay.classList.add('hidden');
-        document.body.style.overflow = '';
+        // Sin overlay ni bloqueo de scroll
         
         // Cambiar ícono
         const icon = mobileMenuButton.querySelector('i');
