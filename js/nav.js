@@ -4,12 +4,15 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML('afterbegin', data);
+            // Inyectar estilos antes para evitar FOUC de modales
+            addDynamicStyles();
             initializeNavbar();
             initializeMobileMenu();
             initializeSearchModal();
-            addDynamicStyles();
             initializeDarkMode();
             initializeCommandPaletteShortcut();
+            // Asegurar que el body no quede bloqueado si algo falló
+            document.body.style.overflow = '';
         })
         .catch(error => console.error('Error loading navbar:', error));
 });
@@ -83,6 +86,7 @@ function initializeSearchModal() {
     function openSearchModal() {
         if (searchModal) {
             searchModal.classList.remove('none');
+            searchModal.classList.remove('hidden');
             searchModal.classList.add('anim');
             document.body.style.overflow = 'hidden';
         }
@@ -91,6 +95,7 @@ function initializeSearchModal() {
     function closeSearchModal() {
         if (searchModal) {
             searchModal.classList.add('none');
+            searchModal.classList.add('hidden');
             document.body.style.overflow = '';
         }
     }
