@@ -9,11 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // Estado inicial
     informationSection.classList.remove('hidden');
     imagesSection.classList.add('hidden');
+    productTab.classList.add('bg-blue-600', 'text-white');
+    productTab.classList.remove('bg-gray-100', 'text-gray-700');
+    imagesTab.classList.remove('bg-blue-600', 'text-white');
+    imagesTab.classList.add('bg-gray-100', 'text-gray-700');
 
     productTab.addEventListener('click', function () {
       informationSection.classList.remove('hidden');
       imagesSection.classList.add('hidden');
       productTab.classList.add('bg-blue-600', 'text-white');
+      productTab.classList.remove('bg-gray-100', 'text-gray-700');
       imagesTab.classList.remove('bg-blue-600', 'text-white');
       imagesTab.classList.add('bg-gray-100', 'text-gray-700');
     });
@@ -22,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
       informationSection.classList.add('hidden');
       imagesSection.classList.remove('hidden');
       imagesTab.classList.add('bg-blue-600', 'text-white');
+      imagesTab.classList.remove('bg-gray-100', 'text-gray-700');
       productTab.classList.remove('bg-blue-600', 'text-white');
       productTab.classList.add('bg-gray-100', 'text-gray-700');
     });
@@ -66,5 +72,3 @@ document.addEventListener('click', function (e) {
     closeModal();
   }
 });
-
-
